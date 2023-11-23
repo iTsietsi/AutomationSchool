@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="User List Table Tests">
+    <listeners>
+        <listener class-name="utilities.Reporting"/>
+    </listeners>
+
+    <test name="Validate User List Table" enabled="true">
+        <classes>
+            <class name="gui.test.UserListTableTest">
+                <methods>
+                    <include name="validateUserListTable"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Add Users To The User List Table" enabled="true">
+        <classes>
+            <class name="gui.test.UserListTableTest">
+                <methods>
+                    <include name="addUsersToTheList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

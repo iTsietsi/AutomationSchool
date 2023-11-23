@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Dog Breeds Tests">
+
+    <test name="Get All Dogs By Breed" enabled="true">
+        <classes>
+            <class name="api.test.DogTest">
+                <methods>
+                    <include name="getAllDogByBreed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify That A Breed Is Within The List" enabled="true">
+        <classes>
+            <class name="api.test.DogTest">
+                <methods>
+                    <include name="verifyBreedWithinList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Get The Dog By Sub-Breed" enabled="true">
+        <classes>
+            <class name="api.test.DogTest">
+                <methods>
+                    <include name="getDogBySubBreed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Get A Random Dog Image By Sub-Breed" enabled="true">
+        <classes>
+            <class name="api.test.DogTest">
+                <methods>
+                    <include name="getRandomImage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
